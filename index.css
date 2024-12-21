@@ -1,0 +1,124 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #e29f9f;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 800px; /* Set a maximum width */
+    margin: auto;
+    text-align: center;
+    margin-top: 55px;
+}
+
+textarea {
+    height: 270px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 11px;
+    margin-top: 25px;
+    padding: 6px;
+    width: 100%; /* Full width for better responsiveness */
+    box-sizing: border-box; /* Include padding/border in width */
+}
+
+.dark-mode #text-display {
+    background-color: #333;
+    border-color: #444;
+}
+
+.textBox {
+    padding: 11px;
+    margin-top: 11px;
+    border-radius: 11px;
+}
+
+.textBox p {
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.textBox button {
+    width: 100%;
+    max-width: 200px; /* Set a max width for buttons */
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: rgb(253, 22, 60);
+    cursor: pointer;
+    color: white;
+    margin-top: 12px;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    textarea {
+        height: 200px; /* Adjust height for smaller screens */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .textBox p {
+        font-size: 18px; /* Adjust text size */
+    }
+
+    .textBox button {
+        font-size: 16px; /* Adjust button font size */
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    textarea {
+        height: 150px; /* Further reduce height */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .textBox p {
+        font-size: 16px; /* Adjust text size */
+    }
+
+    .textBox button {
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+/* Add styles for leaderboard and history */
+#leaderboard, #history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+    border-radius: 8px;
+}
+
+#leaderboard h2, #history h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#leaderboard p, #history p {
+    font-size: 16px;
+    margin: 5px 0;
+}

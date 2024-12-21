@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="dark-mode-toggle">Dark Mode</button>
+    <div class="container">
+        <h1>Test Your Typing Speed</h1>
+        <label for="duration-select">Select Duration (in seconds): </label>
+        <select id="duration-select">
+            <option value="30">30</option>
+            <option value="60">60</option>
+            <option value="120">120</option>
+            <option value="180">180</option>
+            <option value="240">240</option>
+            <option value="300">300</option>
+        </select>
+        <div class="textBox">
+            <p id="showRandomData"></p>
+            <textarea id="textInput" disabled="true"></textarea> <br>
+            <button id="startBtn">Start</button>
+            <p id="showText"></p>
+            <p id="speed"></p>
+            <p id="accuracy"></p>
+        </div>
+        <div id="leaderboard"></div>
+        <div id="history"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
